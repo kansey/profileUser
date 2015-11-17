@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <title>Sign in &middot; Twitter Bootstrap</title>
+    <!-- Le styles -->
+  <link href="http://localhost/public/css/index.css" rel="stylesheet">
+ </head>
+<body>
+<div class="fullscreen"/>
+<div class="container">
+  <form class="form-signin" name="index" method="POST" action="http://localhost/index.php">
+    <h2 class="form-signin-heading">Пожалуйста,войдите</h2>
+    <input type="text" class="input-block-level" placeholder="Email адрес" name="email">
+    <!--<div class="alert alert-error">
+    <span id="email" ></span>
+    </div>-->
+    <input type="password" class="input-block-level" placeholder="Пароль" name="pass">
+    <!--<div class="alert alert-error">
+      <span id = "pass"></span>
+    </div>-->
+    <a href="http://localhost/public/html/reg.html">Регистрация</a>
+    <button class="btn btn-large btn-primary" type="submit" >Вход</button>
+  </form>
+</div> <!-- /container -->
+<div class="lower-left-corner">
+  
+  <select class="select" id="lang">
+    <option disabled>Langugage</option>
+    <option>ru</option>
+    <option>en</option>
+  </select>
+</div> <!-- /lower-left-corner -->
+</body>
+<script type="text/javascript" src="http://localhost/js/index.js"></script>
+</html>
+

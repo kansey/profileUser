@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" content="text/html">
+    <title>Sign in &middot; Twitter Bootstrap</title>
+    <!-- Le styles -->
+  <link href="http://localhost/public/css/index.css" rel="stylesheet">
+<style type="text/css">
+  .form-signin {
+    max-width: 420px;
+  }
+</style>
+</head>
+<body>
+<div class="fullscreen"/>
+<div class="container">
+  <form class="form-signin" method="POST" action="http://localhost/reg.php" enctype="multipart/form-data">
+    <h2 class="form-signin-heading">Регистрация</h2>
+    <input type="text" class="input-block-level" placeholder="Введите адрес email" name="email">
+    <input type="text" class="input-block-level" placeholder="Подтвердите адреc email" name="confirm_email">
+    <input type="password" class="input-block-level" placeholder="Введите пароль" name="pass">
+    <input type="password" class="input-block-level" placeholder="Подтвердите пароль" name="confirm_pass">
+   
+  <label class="uploadbutton">
+    <div class="button" >Выбрать</div>
+    <div class='input'>Выберите файл</div>
+    <input name="photo" type="file" accept="image/png,image/gif,image/jpg" id="image" />
+    </label>
+    <button class="btn btn-large btn-primary" type="submit">Регистрация</button>
+  </form>
+</div> <!-- /container -->
+<div class="lower-left-corner">
+  <select class="select" id="lang">
+    <option disabled>Langugage</option>
+    <option>ru</option>
+    <option>en</option>
+  </select>
+</div> <!-- /lower-left-corner -->
+</body>
+<script type="text/javascript" src="http://localhost/js/reg.js"></script>
+<script type="text/javascript" src="http://localhost/js/lang.js"></script>
+</html>
