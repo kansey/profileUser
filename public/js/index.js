@@ -68,6 +68,7 @@ function validateEmail (objectMail) {
 				message : message.incorrectEmail,
 				node    : objectMail
 		 	};
+		 	
 		 	window.validated = false;
 		}
 		else {
@@ -98,6 +99,7 @@ function validatePasswd (objectPassword) {
 				message : message.incorrectPasswd,
 				node    : objectPassword
 		 	};
+		 	
 		 	window.validated = false;
 		}
 		else {
@@ -135,7 +137,7 @@ function searchError () {
 */
 function showError (element, errorMessage) {
 	var parent = element.parentNode;
-  	var div = document.createElement('div');
+  	var div    = document.createElement('div');
   	
   	div.className = "alert alert-error";
   	div.innerHTML = errorMessage;
@@ -165,17 +167,17 @@ function resetError () {
  * @return void
 */
 function changeLang (indexLang) {
-	var h2     = document.getElementsByTagName('h2'),
+	        var h2 = document.getElementsByTagName('h2'),
 		inputs = document.getElementsByTagName('input'),
 		a      = document.getElementsByTagName('a'),
 		button = document.getElementsByTagName('button');
 
 	if (indexLang === 2) {
-		h2[0].innerHTML = "Please sign in";
+		h2[0].innerHTML          = "Please sign in";
 		inputs.email.placeholder = "Email addres";
-		inputs.pass.placeholder = "Password";
-		a[0].innerHTML = "Remember me";
-		button[0].innerHTML = "Sign in";
+		inputs.pass.placeholder  = "Password";
+		a[0].innerHTML           = "Remember me";
+		button[0].innerHTML      = "Sign in";
 
 		message = {
 			emptyField      : 'This field is empty, fill it up please',
@@ -184,11 +186,11 @@ function changeLang (indexLang) {
 		};
 	} 
 	else if (indexLang === 1) {
-		h2[0].innerHTML = "Пожалуйста,войдите";
+		h2[0].innerHTML          = "Пожалуйста,войдите";
 		inputs.email.placeholder = "Email адрес";
-		inputs.pass.placeholder = "Пароль";
-		a[0].innerHTML = "Регистрация";
-		button[0].innerHTML = "Вход";
+		inputs.pass.placeholder  = "Пароль";
+		a[0].innerHTML           = "Регистрация";
+		button[0].innerHTML      = "Вход";
 
 		message = {
 			emptyField      : 'Это поле пустое, заполните его пожалуйста',
