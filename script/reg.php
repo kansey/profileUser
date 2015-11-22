@@ -31,9 +31,9 @@ require_once('/var/www/script/validation.php');
  function saveImageAndRename($path, $email, $name)
  	{
  		$uploaddir  = '/var/www/public/image/';
- 		$newName =  substr($email, 0,4);
- 		$format = substr($name, strrpos($name, '.'));
- 		$newName .= $format;
+ 		$newName    =  substr($email, 0,4);
+ 		$format     = substr($name, strrpos($name, '.'));
+ 		$newName   .= $format;
  		move_uploaded_file($path, $uploaddir . $newName);
  		return;
  	} //end saveImageAndRename()
@@ -102,9 +102,9 @@ require_once('/var/www/script/validation.php');
 /*
 	Data on the loaded image
 */
- $path 			= $_FILES["photo"]["tmp_name"];
- $size 			= $_FILES["photo"]["size"];
- $nameImage 	= $_FILES["photo"]["name"];
+ $path 	    = $_FILES["photo"]["tmp_name"];
+ $size 	    = $_FILES["photo"]["size"];
+ $nameImage = $_FILES["photo"]["name"];
  
  
  /*
