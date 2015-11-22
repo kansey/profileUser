@@ -11,7 +11,7 @@ function validateForm (form) {
 	resetError();
 	var inputElements = document.getElementsByTagName('input');
 	
-	var email         = inputElements[0],
+	        var email     = inputElements[0],
 		confirmEmail  = inputElements[1],
 		passwd        = inputElements[2],
 		confirmPasswd = inputElements[3],
@@ -144,7 +144,7 @@ function searchError () {
 */
 function showError (element, errorMessage) {
 	var parent = element.parentNode;
-  	var div = document.createElement('div');
+  	var div    = document.createElement('div');
   	
   	div.className = "alert alert-error";
   	div.innerHTML = errorMessage;
@@ -253,7 +253,7 @@ function checkFileLoad (element,path) {
 	
 	if (path === "") {
 		var parent = element.parentNode,
-	    div    = document.createElement('div');
+	            div    = document.createElement('div');
   	
   		div.className = "alert alert-error";
   		div.innerHTML = message.imageNotLoad;
@@ -271,11 +271,11 @@ function checkFileLoad (element,path) {
  * @return void
 */
 function changeLang(indexLang)  {
-	var inputs       = document.getElementsByTagName('input'),
+	        var inputs   = document.getElementsByTagName('input'),
 		selectButton = document.getElementsByClassName('button'),
 	 	inputClass   = document.getElementsByClassName('input'),
 	 	buttonTag    = document.getElementsByTagName('button'),
-	 	h2     		 = document.getElementsByTagName('h2');
+	 	h2     	     = document.getElementsByTagName('h2');
 
 	 	if (indexLang === 2) {
 	 		inputs[0].placeholder     = "Email addres";
@@ -329,7 +329,7 @@ var message = {
 },
 forms = {},
 validated,
-form = document.querySelector("form"),
+form        = document.querySelector("form"),
 emailRegex  =  /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
 passwdRegex = /(?=.*[\\!@#$%\^&*()_+"№;:?=\/|.,-]|\s+)/;
 
@@ -340,7 +340,7 @@ addEventListener('submit', function(e){
 });
 
 var image = document.getElementById('image'),
- 	label = document.getElementsByTagName('button');
+    label = document.getElementsByTagName('button');
 
 image.addEventListener('change', function(e){
   e.preventDefault();
